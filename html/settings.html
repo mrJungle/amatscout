@@ -1,0 +1,65 @@
+<div ng-if="showSpinner"style="  top: 0px;
+height: 100%;
+  left: 0px; 
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  position:fixed;
+  z-index: 5000;
+  color:#000;
+  background: rgba(0,0,0,0.8);
+  color:#fff;">
+
+<span us-spinner="{radius:30, width:8, length: 16, color: 'white'}" spinner-on="showSpinner"></span>
+</div>
+
+<div ng-if ="autenticato" class="container animated slideInUp" style="margin-top:70px;min-height:600px;background-color: rgba(0,0,0,0);">
+
+
+
+
+<div class="col-lg-12 card">
+    <h2 class="text-center">Settings</h2>    
+    <hr>
+    <h3 style="min-height:25px;margin:0px 20px;"> Mappa Segue Mouse
+        <span>
+            <a class="btn pull-right btn-default" type="submit" ng-click="cambia(followMouse)" ng-class="{'btn-default': !followMouse, 'btn-success': followMouse} " style="border-radius: 50%;">{{followMouse}}</a>
+        </span>
+    </h3>
+    <hr>
+  </div>
+
+<div class="col-lg-12 card">
+  <h2 class="text-center">Ultime modifiche</h2>
+    <ul class="list-group" style="background-color: rgba(0,0,0,0);margin: 0px;box-shadow: none;border:none;">
+      <li class="list-group-item overfocus" ng-repeat="c in utilsServiceArr | orderBy: '-'">
+                      <a ng-if="c.last!=1" class="btn pull-right btn-danger" type="submit" style="border-radius: 9%;" ng-click="ripristina(c.$id)"> Ripristina <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></a>
+    {{convertiData(c.udateDate) | date:'dd-MM-yyyy hh:mm:ss'}} | {{c.ulog}}
+        <span ng-if="c.last==1" class="label label-success  pull-right " style="border-radius: 50%;margin-right: 15px;"><h6>ATTIVA</h6></span>
+      </li>
+    </ul>
+</div>
+
+
+<div class="col-lg-12 card" >
+    <div class="col-lg-12">
+        <button class="btn btn-block btn-danger btn-lg" type="submit" ng-click="doLogOut()"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>  Log Out</button>
+    </div>
+</div>
+
+<div class="col-lg-12 card">
+  <h1 class="text-center">To Do</h1>    
+
+<hr>
+cancella video
+<hr>
+
+<hr>
+<hr>
+
+</div>
+
+
+
+
+</div>

@@ -1,0 +1,53 @@
+<div ng-if="showSpinner" style="  top: 0px;
+height: 100%;
+  left: 0px; 
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  position:fixed;
+  z-index: 5000;
+  color:#000;
+  background: rgba(0,0,0,0.8);
+  color:#fff;">
+
+<span us-spinner="{radius:30, width:8, length: 16, color: 'white'}" spinner-on="showSpinner"></span>
+</div>
+
+
+
+
+
+<div  class="container animated slideInUp" style="margin-top:70px;min-height:600px;">
+  <div class="col-lg-12" >
+
+
+<div class="jumbotron">
+  <h1 class="text-center">LOG IN</h1>
+  <p  class="text-center">Area Riservata</p>
+        
+    
+    <hr>
+    
+
+<div class="input-group input-group-lg">
+  <span class="input-group-addon glyphicon glyphicon-envelope" id="sizing-addon1"></span>
+  <input type="text" ng-model="loginData.username" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
+</div>
+    <br>
+
+<div class="input-group input-group-lg">
+  <span class="input-group-addon glyphicon glyphicon-eye-close" id="sizing-addon1"></span>
+  <input type="password" ng-model="loginData.password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+</div>
+    <br>
+
+          <button class="btn btn-block btn-primary btn-lg" type="submit" ng-click="doLogin()" >Log in</button>
+
+</div>
+
+ 
+   
+  </div>  
+
+
+</div>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<html ng-app="app"> 
+	<head>
+	 	<!-- Favicon Da creare-->
+	  <link rel="shortcut icon" href="img/favicon.ico">
+	  <meta charset="utf-8">
+
+
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	  <meta name="description" content="">
+		<!-- MUST disable user scaling to have fixed top navbar in Older Androids -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+			<!-- CSS Vendor -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"> 
+		<link rel="stylesheet" href="bower_components/ui-bootstrap/misc/demo/assets/demo.css"> 
+		
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">		
+		<link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">		
+		<link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">		
+		
+		<link rel="stylesheet" href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
+
+
+		<link rel="stylesheet" href="bower_components/animate.css/animate.min.css"> 
+		
+		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/custom.css"> 
+	</head>
+	<body style="background-color: #fff;">		
+
+		<div ng-controller="AppCtrl">
+		    <div app-navbar></div>
+		    <div class="ui-view-container" style="padding:0px;margin:0px;">
+		      <div ui-view='app' > </div>
+		    </div>
+		
+		</div>
+
+		<script src="bower_components/jquery/dist/jquery.min.js">  </script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js">  </script>
+		<script src="bower_components/angular/angular.js">  </script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js">  </script>		
+		<script src="bower_components/underscore/underscore-min.js">  </script>
+		
+		<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js">  </script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js">  </script>
+
+
+		<script src="bower_components/d3/d3.js"></script>
+		<script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+		<script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+
+		<script src="bower_components/leaflet/dist/leaflet.js"></script>
+		<script src="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js"></script>
+
+		<script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
+
+<script src="bower_components/spin.js/spin.js"></script>
+<script src="bower_components/angular-spinner/angular-spinner.js"></script>
+
+		<script src="bower_components/angular-order-object-by/src/ng-order-object-by.js"></script>
+
+<script src="bower_components/angular-animate/angular-animate.min.js">  </script>
+
+
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+<!-- old AngularFire 
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+     
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+-->
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDAjvse6g2gH7H3DzHkgA1ovMVCEFAfzsQ",
+    authDomain: "amatmonsem.firebaseapp.com",
+    databaseURL: "https://amatmonsem.firebaseio.com",
+    storageBucket: "amatmonsem.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+		<script src="js/app.js">  </script>
+		<script src="js/controllers.js">  </script>
+		<script src="js/directives.js">  </script>
+		<script src="js/service.js">  </script>
+	</body>
+</html>

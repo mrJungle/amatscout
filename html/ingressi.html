@@ -1,0 +1,129 @@
+<div class="animated zoomIn" ng-if="opengamedetail" style="top:0;bottom:0;min-height: 100%;margin:0px;padding:10%;background: rgba(0,0,0,0.7);z-index:3000;position:fixed;">
+
+	<div class="col-lg-12 col-xs-12" style="background: #fff;border-radius: 15px 15px 0px 0px;padding: 15px 0px 0px 0px;">
+		<button type="button" class="btn btn-link btn-lg  pull-right" aria-label="Left Align" ng-click="closeGameDetail()">
+		  <span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:#ff0000;font-size:1.6em;"></span>
+		</button>		
+	</div>
+
+	<div class="col-lg-12 col-xs-12" style="background: #fff;border-radius: 0px 0px 15px 15px;padding-bottom: 50px;padding-top: 0px;">
+
+		<h4 class="text-center visible-xs" style="border-bottom: 4px solid red;font-family: 'Press Start 2P', cursive;">{{gameDetail.titolo | uppercase}}</h4>
+
+		<h1 class="text-center hidden-xs" style="border-bottom: 4px solid red;font-family: 'Press Start 2P', cursive;">{{gameDetail.titolo | uppercase}}</h1>
+
+<div class="col-lg-5 col-xs-6">
+		<img src="dati/img/{{gameDetail.immagini[0]}}" class="img-responsive" alt="Responsive image">
+</div>
+<div class="col-lg-7 col-xs-12">
+<ul class="list-group">
+  <li class="list-group-item">Produttore : {{gameDetail.produttore}}</li>
+  <li class="list-group-item">Sviluppatore : {{gameDetail.sviluppatore}}</li>
+  <li class="list-group-item">Anno produzione : {{gameDetail.anno_produzione}}</li>
+  <li class="list-group-item">Genere: <span ng-repeat="gen in gameDetail.genere"  class="label label-default">{{gen}}</span></li>
+  <li class="list-group-item">Rarità: <span class="label {{coloreRarita(gameDetail.rarita)}}">{{gameDetail.rarita}}</span></li>
+  <li class="list-group-item">Numero massimo giocatori: {{gameDetail.numero_massimo_giocatori}}</li>
+  <li class="list-group-item">Codice box: {{gameDetail.codice_del_box}}</li>
+  <li class="list-group-item">Codice manuale istruzioni: {{gameDetail.codice_del_manuale_istruzioni}}</li>
+  <li class="list-group-item">Codice cartuccia: {{gameDetail.codice_della_cartuccia_di_gioco}}</li>
+  <li class="list-group-item">Note: {{gameDetail.note}}</li>
+</ul>
+
+</div>
+
+
+	</div>
+
+
+
+</div>
+
+<div class="affix affix-top animated slideInDown" ng-if="!filtrivisibili" style="padding:0%;min-width:100%;z-index:1000;margin-top:50px;background:rgba(0,0,0,0.9);border-radius: 0px 0px 25px 25px;">
+	<div class="col-lg-12" style="min-height: 200px;">
+
+		<div class="container" style="min-height: 200px;">	
+
+			<div class="row" style="padding-top:25px;">
+			  <div class="col-lg-12">
+			    <div class="input-group">
+			      <input type="text" class="form-control"  placeholder="Search for..."  ng-model="filters.titolo">
+			      <span class="input-group-btn">
+			        <button class="btn btn-primary" type="button">
+			        	<span class="glyphicon glyphicon-remove" aria-hidden="true" ></span>
+			        </button>
+			      </span>
+			    </div><!-- /input-group -->
+			  </div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+
+
+			<div class="row" style="padding-top:25px;margin-bottom:15px;color:#fff;">
+			  <div class="col-lg-12" >
+			<h2 class="text-center hidden-xs" "> Rarità : 			
+			    <uib-rating ng-model="filters.rarita" max="max" read-only="isReadonly" on-click="hoveringOver(value)" on-hover="hoveringOver(value)"  titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating>
+			<span class="label danger" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" style="padding-top:-6px;font-size: 0.9em;">{{filters.rarita}}</span>    
+			    <button type="button" class="btn btn-primary" ng-click="filters.rarita = 0" style="padding-bottom:5px;margin-left:10px;">
+			    	<span class="glyphicon glyphicon-remove" aria-hidden="true" ></span>
+			    </button>
+			</h2>
+
+			<h4 class="text-center visible-xs"> Rarità : 			
+			    <uib-rating ng-model="filters.rarita" max="max" read-only="isReadonly" on-click="hoveringOver(value)" on-hover="hoveringOver(value)"  titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating>
+			<span class="label danger" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" style="padding-top:-6px;font-size: 1.1em;">{{filters.rarita}}</span>    
+			    <button type="button" class="btn btn-primary" ng-click="filters.rarita = 0" style="padding-bottom:5px;margin-left:10px;">
+			    	<span class="glyphicon glyphicon-remove" aria-hidden="true" ></span>
+			    </button>
+			</h4>
+
+						 
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+	
+	<div class="col-lg-12">
+		<button type="button" class="btn btn-link btn-lg  pull-right" aria-label="Left Align" ng-click="visualizzafiltri()">
+		  <span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:#ff0000;font-size:1.6em;"></span>
+		</button>		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="affix affix-top animated fadeIn" ng-if="filtrivisibili" 
+style="border-radius: 15px 0px 0px 15px;padding:0%;right:0px;min-width:25px;z-index:1000;margin-top:70px;background:#fff;padding:10px 5px 5px 5px;">
+	<button class="btn btn-link btn-lg" type="button" ng-click="visualizzafiltri()">
+		<span class="glyphicon glyphicon-search" aria-hidden="true" style="color:#ff0000;font-size:1.6em;"></span>
+	</button>
+</div>
+
+
+<div class="container-fluid  animated slideInDown" style="padding-top:55px;margin:0px;background: rgba(0,0,0,0);min-height: 250px;color:#fff;">
+	<div class="jumbotron" style="background: rgba(0,0,0,0);">
+	  <h1 class="text-center" style="font-family: 'Press Start 2P', cursive;">I Giochi</h1>
+	  <p class="text-center" style=""> La raccolta di tutti i giochi della storica console</p>
+	</div>
+</div>
+
+	
+
+<div class="container animated slideInUp" style="background: rgba(0,0,0,0.4);min-height: 200px;border-radius: 15px;margin-bottom: 250px;padding-top: 30px;padding-bottom: 30px;">
+	<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" ng-repeat="g in giochi.giochi | filter : test() | filter : filters.titolo" ng-click="getGameDetail(g)" style="background: rgba(255,255,255,0);min-height: 200px;padding:15px;">
+	<div class="col-lg-12 " style="background: rgba(255,255,255,1);padding:15px;border-radius: 10px;">
+			<h4 class="text-center" style="border-bottom: 4px solid red;font-family: 'Press Start 2P', cursive;">{{g.titolo | uppercase}}</h4>
+			<img src="dati/img/{{g.immagini[0]}}" class="img-responsive thumbnail" alt="Responsive image">
+	</div>
+	</div>
+
+
+
+</div>

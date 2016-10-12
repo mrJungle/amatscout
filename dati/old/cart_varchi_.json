@@ -1,0 +1,57 @@
+{"cart":
+[
+	{"id":90, 
+	 "nome":"BANDELLO", 
+	 "tipo":"Pedaggio", 
+	 "lat":9.16529160119685, 
+	 "lon":45.4628393273515
+	},
+	{"id":91,
+	 "nome":"SAN VITTORE",  
+	 "tipo":"Pedaggio", 
+	 "lat":9.1659951390863, 
+	 "lon":45.4646400054629
+	},
+	{"id": 96, 
+	 "nome":"MASCHERONI",  
+	 "tipo":"Pedaggio", 
+	 "lat":9.16605862635026, 
+	 "lon":45.4694235851656
+	},
+	{"id": 92, 
+	 "nome": "MAGENTA",  
+	 "tipo": "Tpl", 
+	 "lat": 9.16637724018541, 
+	 "lon":45.4659497748723
+	},
+	{"id": 95,
+	 "nome": "BAZZONI",  
+	 "tipo": "Pedaggio", 
+	 "lat": 9.16643454439999, 
+	 "lon": 45.4678983482685
+	},
+	{"id": 93, 
+	 "nome": "BOCCACCIO",  
+	 "tipo": "Pedaggio", 
+	 "lat": 9.16692400998873, 
+	 "lon": 45.4674699804057
+	},
+	{"id": 94, 
+	 "nome": "XX SETTEMBRE",  
+	 "tipo": "Pedaggio", 
+	 "lat": 9.1668579139757, 
+	 "lon": 45.4677715592158
+	},
+	{"id": 89,
+	 "nome": "OLIVETANI",  
+	 "tipo": "Tpl", 
+	 "lat": 9.16691349630027, 
+	 "lon": 45.460318647698
+	},
+	{"id": 88, 
+	 "nome": "SERVIO TULLIO",  
+	 "tipo": "Pedaggio", 
+	 "lat": 9.16862245643641, 
+	 "lon": 45.4593180995061
+	}]
+}

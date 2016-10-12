@@ -1,0 +1,121 @@
+<div class="modal-header" style="border-bottom: none;">
+    <button class="btn btn-link btn-sm pull-right" type="button" ng-click="cancel()">
+    	<span class="glyphicon glyphicon-remove"></span>
+    </button>
+
+</div>
+<div class="modal-body" style="margin-bottom: 0px;padding-bottom:0px;">
+<form class="form-horizontal">
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Nome</label>
+    <div class="col-sm-10">
+      <input type="text"  class="form-control" ng-model="item.name" placeholder="Nome Località">
+    </div>
+  </div>
+</form>
+  <div class="col-lg-12" style="margin-bottom: 15px;">
+    <leaflet center="london" tiles="tiles" defaults="defaults" width="100%" height="300px" markers="markers" ></leaflet>
+   </div> 
+   <div class="col-lg-12">
+	    <div class="col-lg-4 col-lg-offset-2 form-inline"  >
+		  <div class="form-group">
+		    <label for="latCampagna">Lat</label>
+		    <input type="text" ng-model="item.lat" class="form-control" id="latCampagna" placeholder="Latitudine" disabled>
+		  </div>
+		  </div>
+		  <div class="col-lg-4 form-inline" >
+		  <div class="form-group">
+		    <label for="lonCampagna">Lon</label>
+		    <input type="text" class="form-control" id="lonCampagna" placeholder="Longitudine" ng-model="item.lng" disabled>
+		  </div>
+		</div>
+  </div> 
+<div class="col-lg-12" style="margin-bottom: 20px;">
+	<div class="row" style="padding:5%;">	
+		<div class="row" style="border-bottom: solid #999 2px;font-size: 1.4em;padding:1%;">
+			<div class="col-lg-1"><th>ID</th> </div>
+			<div class="col-lg-3"><th>Data Rilievo</th> </div>
+			<div class="col-lg-3"><th>Link di dettaglio</th> </div>
+			<div class="col-lg-3"><th>Tipo rilievo</th> </div>
+			<div class="col-lg-2"><th><a type="button" class="btn btn-primary pull-right" ng-click="addItemRilievo(item)"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+				</th> </div>
+		</div>
+		<div class="row" style="border: solid #999 0.2px;border-radius: 5px;margin-top: 10px;padding: 25px 15px;" ng-repeat="r in item.rilievi | orderBy : 'giorno'">
+			<div class="col-lg-1">{{$index}}</div>
+			<div class="col-lg-3" ng-class="{'has-error': controlloDateDuplicate(item.rilievi, r.giorno), 'pp':true}">
+				<input type="text"  class="form-control"  ng-model="r.giorno" >
+			</div>
+			<div class="col-lg-3">
+				<input type="url"  class="form-control" ng-model="r.link">  	
+			</div>
+			<div class="col-lg-3">
+				<select class="form-control" ng-model="r.icon">
+				  <option class="active">tag</option>
+				  <option>car</option>  
+				  <option>bicycle</option>
+				  <option>motorcycle</option>
+				  <option>road</option>
+				</select>
+			</div>
+			<div class="col-lg-2">
+				<button class="btn btn-danger btn-sm pull-right" type="submit" ng-click="delItemRilievo(item, r, r.$$hashKey)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+			</div>
+			
+			<div class="col-lg-12" style="padding-left: 2%;border-bottom: 0.5px solid #888;margin-bottom: 10px;margin-top: 15px;"> 
+				<h4>Video correlati<a type="button" class="btn btn-primary btn-sm" ng-click="addItemVideo(r)" style="margin-left: 5px;">
+		  			<span class="glyphicon glyphicon-plus" aria-hidden="true"> </span></a>
+		  		</h4>
+		  	</div>
+			<div class="col-lg-12" ng-repeat="v in r.video | orderBy : 'id'" style="padding-left: 1%;">
+					<div class="col-lg-1">
+						<input type="text"  class="form-control"  ng-model="v.ord">
+					</div>
+					<div class="col-lg-2">
+						<input type="text"  class="form-control"  ng-model="v.ora_inizio">
+					</div>
+					<div class="col-lg-2">
+						<input type="text"  class="form-control"  ng-model="v.ora_fine">
+					</div>
+					<div class="col-lg-6">
+						<input type="text"  class="form-control"  ng-model="v.link">
+					</div>
+					<div class="col-lg-1">
+						<button class="btn btn-danger btn-sm pull-right" type="submit" ng-click="delItemVideo(r, v.link)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+					</div>					
+			</div>
+			
+		</div>
+	</div>
+</div>  
+
+<hr>
+
+<div ng-if="false" class="col-lg-12">
+<h4 >
+
+		<a class="btn btn-link pull-right" type="button"  ng-click="delItemCampagna(c)"><span class="glyphicon glyphicon-trash" aria-hidden="true"> Elimina</span></a>
+
+		<a  class="btn btn-link pull-right" type="button"  ng-click="saveCampagna(c)"><span class="glyphicon glyphicon-save" aria-hidden="true"> Salva </span></a>
+
+		<a  class="btn btn-link pull-right" type="button"  ng-click="resetEditCampagna(c)"><span class="glyphicon glyphicon-remove" aria-hidden="true"> Annulla Modifiche </span></a>
+
+
+</h4>
+</div>
+ 
+
+
+
+
+</div> <!-- fine body -->
+
+<div class="modal-footer" style="border-top: none;">
+    <button class="btn btn-danger btn-lg pull-left" type="button" ng-click="elimina()">
+    	<span class="glyphicon glyphicon-trash" aria-hidden="true"> Elimina</span>
+    </button>
+
+    <button class="btn btn-success btn-lg" type="button" ng-click="salva()">
+    	<span class="glyphicon glyphicon-save" aria-hidden="true"> Salva </span>
+    </button>
+</div>

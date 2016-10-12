@@ -1,0 +1,249 @@
+<script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header"> <h3 class="modal-title">I'm a modal!</h3></div>
+    <div class="modal-body">
+	    <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+	    <h4>Inline</h4>
+	    <div style="display:inline-block; min-height:290px;">
+	      <uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></uib-datepicker>
+	    </div>
+
+	    <hr />
+	    <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+	    <button type="button" class="btn btn-sm btn-default" ng-click="setDate(2009, 7, 24)">2009-08-24</button>
+	    <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+	    <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" uib-tooltip="After today restriction">Min date</button>
+
+	            <ul>
+	                <li ng-repeat="item in items">
+	                    <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+	                </li>
+	            </ul>
+	            Selected: <b>{{ selected.item }}</b>
+	        </div>
+	        <div class="modal-footer">
+	            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+	            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</script>
+
+
+
+
+
+<div style="top:25%;right: 0; margin:0px;padding:5px;position:fixed;z-index: 50000;background-color: rgba(0,0,0,0.89);border-radius: 20px 0px 0px 20px; ">
+	<h6>
+	<a class="btn btn-block btn-link" aria-label="Left Align" ng-click="variaData(1)" >
+	  <span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:#fff;"></span>
+	</a>
+	</h6>
+	<h6>
+	<a class="btn btn-link" aria-label="Left Align" ng-click="open()" style="margin:1px;padding-bottom:4px;font-size:1.2em;">
+	<span class="glyphicon glyphicon-calendar" aria-hidden="true" style="color:#fff;"></span>			
+	</a>
+	</h6>
+	<h6>
+	<a class="btn btn-block btn-link" aria-label="Left Align" ng-click="variaData(-1)" >
+	  <span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:#fff;"></span>
+	</a>
+	</h6>
+</div>
+
+
+<div class="container-fluid  animated slideInDown" style="padding-top:55px;background: rgba(0,0,0,0.2);min-height: 350px;color:#fff;">
+	<div class="jumbotron" style="background: rgba(0,0,0,0);">
+	  <h1 class="text-center" style="font-family: 'Orbitron', sans-serif;">Ingressi</h1>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid animated slideInUp" style="background-color: #fff;">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 " >
+
+				<div class="col-lg-2 col-md-12" style="background: rgba(255,5,255,0);min-height: 100%;padding-top:35px;">			
+										  <h2 class="text-center psfont">{{giorno_last | date : 'dd-MM'}}</h2>
+					<h1 class="text-center psfont">{{giorno_last | date : 'yyyy'}}</h1>
+					<div ng-if="giornoAreac" class="alert alert-danger" role="alert">
+					  <h3 class="alert-link text-center"> Area C Non Attiva </h3>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-12" style="background: rgba(255,5,255,0);min-height: 100%;padding: 25px 35px 0px 40px;border-left: solid 2px rgba(0,0,0,0.04);color: #000;border-right:rgba(0,0,0,0.04) solid 2px;">
+					<ul class="list-group" style="border:none;box-shadow: none;">
+					  <li class="list-group-item" style="font-size:1.3em;border:none;box-shadow: none;">
+					    <span class="badge" style="background-color: rgba(50,190,230,1);color:#000;">{{dataSetDelGiorno.oggiFunzionamenti[0].transiti | number: 0}}</span>
+					    Transiti stimati
+					  </li>					
+					  <li class="list-group-item" style="font-size:1.3em;border:none;box-shadow: none;">
+					    <span class="badge" style="background-color: rgba(0,0,0,0.2);color:#000;">{{dataSetDelGiorno.oggiFunzionamenti[0].transiti_rilevati | number: 0}}</span>
+					    Transiti rilevati
+					  </li>					
+					  <li class="list-group-item"  style="font-size:1.3em;border:none;box-shadow: none;">
+					    <span class="badge" style="background-color: rgba(50,190,230,1);color:#000;">{{dataSetDelGiorno.oggiFunzionamenti[0].veicoli | number: 0}}</span>
+					    Veicoli rilevati
+					  </li>										  
+					  <li class="list-group-item" style="font-size:1.3em;border:none;box-shadow: none;">
+					    <span class="badge" style="background-color: green;">{{dataSetDelGiorno.oggiFunzionamenti[0].pagamento_transiti | currency:"€ ":0}}</span>
+					    Introito potenziale rilevato
+					  </li>					  					  
+					</ul>
+				</div>
+
+				<div class="col-lg-5">					
+					<div class="col-lg-7" >
+						<nvd3 ng-if="pp" options="dataSetGraph.oggiFunzionamentiVarchi.opzioni" data="dataSetGraph.oggiFunzionamentiVarchi.dati" ></nvd3>
+					</div>
+					<div class="col-lg-5">
+						<ul class="list-group" style="margin-top: 45px;border:none; box-shadow:none;">
+						  <li class="list-group-item" style="border:none; box-shadow:none;">
+						    <span class="badge" style="background-color: green;">{{dataSetDelGiorno.oggiFunzionamenti[0].varchi_funzionanti | number: 0}}</span>
+						    Varchi funzionanti
+						  </li>
+
+						  <li class="list-group-item" style="border:none;">
+						    <span class="badge" style="background-color: orange;">{{dataSetDelGiorno.oggiFunzionamenti[0].malfunzionamenti | number: 0}}</span>
+						    Varchi con malfunzionamenti
+						  </li>
+						  <li class="list-group-item" style="border:none;">
+						    <span class="badge" style="background-color: red;">{{dataSetDelGiorno.oggiFunzionamenti[0].guasti | number: 0}}</span>
+						    Varchi guasti
+						  </li>
+						  <li class="list-group-item" style="border:none;">
+						    <span class="badge" style="background-color: gray;">{{dataSetDelGiorno.oggiFunzionamenti[0].introito_mancato | currency:"€ ":0}}</span>
+						    Introito Mancato 
+						  </li>					  						  
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top:10px;margin-bottom:10px;">
+			<div class="col-lg-10 col-lg-offset-1" style="min-height: 2px;background-color: rgba(0,0,0,0.04);">
+			</div>
+		</div>
+
+		<div class="row" style="margin-top:15px;margin-bottom:15px;">
+
+		<div class="col-lg-6" style="border-right:rgba(0,0,0,0.04) solid 2px;"> 
+			<h3 class="text-center"> Ripartizione per classi</h3>		
+			
+			<div class="col-lg-4" >
+			<nvd3 ng-if="pp" options="dataSetGraph.oggiClassiVeicoli.opzioni" data="dataSetGraph.oggiClassiVeicoli.dati"></nvd3>
+			<h4 class="text-center"> Veicoli </h4>
+			</div>
+			<div class="col-lg-4">
+			<nvd3 ng-if="pp" options="dataSetGraph.oggiClassiTransiti.opzioni" data="dataSetGraph.oggiClassiTransiti.dati"></nvd3>
+			<h4 class="text-center"> Transiti </h4>
+			</div>
+			<div class="col-lg-4" style="padding-top: 90px;">
+				<ul class="list-group" style="border: 0px;">
+						  <li class="list-group-item" style="border: 0px;">
+						    <span class="badge" style="background-color: orange;"> </span>
+						    Veicoli Autorizzati
+						  </li>					
+						  <li class="list-group-item" style="border: 0px;">
+						    <span class="badge" style="background-color: green;"> </span>
+						    Veicoli Ecologici
+						  </li>										  
+						  <li class="list-group-item" style="border: 0px;">
+						    <span class="badge" style="background-color: yellow;"> </span>
+						    Veicoli intestati a Residenti
+						  </li>
+						  <li class="list-group-item" style="border: 0px;">
+						    <span class="badge" style="background-color: purple;"> </span>
+						    Veicoli di Servizio
+						  </li>
+						  <li class="list-group-item" style="border: 0px;">
+						    <span class="badge" style="background-color: gray;"> </span>
+						    Altri veicoli Paganti
+						  </li>
+						</ul>
+			</div>
+		</div>
+
+
+				<div class="col-lg-6">
+					<h3 class="text-center"> Transiti per varco nelle fasce orarie con provvedimento attivo</h3>		
+					<nvd3 ng-if="pp" options="dataSetGraph.oggiAndamentoVarchi.opzioni" data="dataSetGraph.oggiAndamentoVarchi.dati"></nvd3>
+				</div>
+		
+
+		</div>
+
+		<div class="row" style="margin-top:10px;margin-bottom:10px;">
+			<div class="col-lg-9 col-lg-offset-1" style="min-height: 2px;background-color: rgba(0,0,0,0.04);">
+			</div>
+		</div>
+
+		<div class="row" style="margin-top:15px;margin-bottom:15px;">
+				<div class="col-lg-6" style="border-right:rgba(0,0,0,0.04) solid 2px;">
+					<h3 class="text-center">Andamento Orario degli ingressi</h3>
+					<nvd3 ng-if="pp" options="dataSetGraph.oggiAndamentoOrario.opzioni" data="dataSetGraph.oggiAndamentoOrario.dati"></nvd3>
+				</div>		
+
+				<div class="col-lg-6">
+					<h3 class="text-center"> Transiti giornalieri - Ultimi 30 giorni</h3>	
+					<nvd3 ng-if="pp" options="dataSetGraph.periodoAndamentoClassi.opzioni" data="dataSetGraph.periodoAndamentoClassi.dati"></nvd3>
+				</div>
+		</div>
+
+
+
+		<div class="row" style="margin-top:10px;margin-bottom:10px;">
+			<div class="col-lg-8 col-lg-offset-2" style="min-height: 2px;background-color: rgba(0,0,0,0.04);">
+			</div>
+		</div>
+
+
+		<div class="row" style="margin-top:15px;margin-bottom:15px;">
+
+
+
+		</div>
+
+
+		<div class="row" style="margin-top:100px;margin-bottom:100px;">
+			<div class="col-lg-8 col-lg-offset-2" style="min-height: 2px;background-color: rgba(0,0,0,0.04);">
+			</div>
+		</div>
+
+
+		<div class="row" style="margin-top:25px;margin-bottom:25px;">
+				
+		</div>
+
+		<div class="row" style="margin-top:100px;margin-bottom:100px;">
+			<div class="col-lg-8 col-lg-offset-2" style="min-height: 2px;background-color: rgba(0,0,0,0.04);">
+			</div>
+		</div> 
+</div>
+
+
+<div class="container-fluid animated slideInUp" style="background-color: #fff;">
+<div class="row">
+			<div class="col-lg-12" style="background: rgba(0,0,0,0);padding: 20px;min-height: 500px;">
+				<div class="col-lg-12  " style="background: rgba(0,0,0,0.07);border-radius: 15px;padding: 20px;margin:0px;min-height: 500px;border-top: solid 1px #999;border-left: solid 1px #999;">
+			
+					<h1 class="text-center psfont" style="color:#000;">DATI</h1>
+					<table class="table table-bordered">
+					<thead> <tr> <th>#</th> <th>Name</th> <th>Transiti</th> <th>Tot. correzzione</th> <th>% correzzione</th> </tr> </thead>
+					<tbody>
+					  <tr ng-repeat="v in giorno_varchi">
+						  <td class="{{colorariga(v.percentuale)}}">{{v.id_varco}}</td>
+						  <td class="{{colorariga(v.percentuale)}}">{{nomevarco(v.id_varco)}}</td>
+						  <td class="{{colorariga(v.percentuale)}}">{{v.transiti}}</td>
+						  <td class="{{colorariga(v.percentuale)}}">{{v.transiti_corretti}}</td>
+						  <td class="{{colorariga(v.percentuale)}}">{{v.percentuale}}%</td>
+						</tr>
+					</tbody>
+					</table>
+					
+				</div>
+			</div>
+</div>
+</div>
+

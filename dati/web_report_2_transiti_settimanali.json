@@ -1,0 +1,1594 @@
+{
+    "dati": [
+        {
+            "anno": "2011", 
+            "settimana": "1", 
+            "numero_giorni": "0", 
+            "transiti": "80178"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "2", 
+            "numero_giorni": "0", 
+            "transiti": "130577"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "3", 
+            "numero_giorni": "0", 
+            "transiti": "139542"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "4", 
+            "numero_giorni": "0", 
+            "transiti": "139832"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "5", 
+            "numero_giorni": "0", 
+            "transiti": "129053"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "6", 
+            "numero_giorni": "0", 
+            "transiti": "130379"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "7", 
+            "numero_giorni": "0", 
+            "transiti": "136495"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "8", 
+            "numero_giorni": "0", 
+            "transiti": "139755"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "9", 
+            "numero_giorni": "0", 
+            "transiti": "140496"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "10", 
+            "numero_giorni": "0", 
+            "transiti": "129671"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "11", 
+            "numero_giorni": "0", 
+            "transiti": "138903"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "12", 
+            "numero_giorni": "0", 
+            "transiti": "137205"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "13", 
+            "numero_giorni": "0", 
+            "transiti": "138125"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "14", 
+            "numero_giorni": "0", 
+            "transiti": "136614"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "15", 
+            "numero_giorni": "0", 
+            "transiti": "144281"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "16", 
+            "numero_giorni": "0", 
+            "transiti": "125731"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "17", 
+            "numero_giorni": "0", 
+            "transiti": "121519"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "18", 
+            "numero_giorni": "0", 
+            "transiti": "136390"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "19", 
+            "numero_giorni": "0", 
+            "transiti": "135140"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "20", 
+            "numero_giorni": "0", 
+            "transiti": "132692"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "21", 
+            "numero_giorni": "0", 
+            "transiti": "135142"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "22", 
+            "numero_giorni": "0", 
+            "transiti": "136080"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "23", 
+            "numero_giorni": "0", 
+            "transiti": "141954"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "24", 
+            "numero_giorni": "0", 
+            "transiti": "132236"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "25", 
+            "numero_giorni": "0", 
+            "transiti": "127636"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "26", 
+            "numero_giorni": "0", 
+            "transiti": "123885"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "27", 
+            "numero_giorni": "0", 
+            "transiti": "121229"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "28", 
+            "numero_giorni": "0", 
+            "transiti": "119186"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "29", 
+            "numero_giorni": "0", 
+            "transiti": "117444"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "30", 
+            "numero_giorni": "0", 
+            "transiti": "112475"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "31", 
+            "numero_giorni": "0", 
+            "transiti": "91317"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "32", 
+            "numero_giorni": "0", 
+            "transiti": "54447"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "33", 
+            "numero_giorni": "0", 
+            "transiti": "40304"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "34", 
+            "numero_giorni": "0", 
+            "transiti": "53947"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "35", 
+            "numero_giorni": "0", 
+            "transiti": "91422"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "36", 
+            "numero_giorni": "0", 
+            "transiti": "121880"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "37", 
+            "numero_giorni": "0", 
+            "transiti": "120480"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "38", 
+            "numero_giorni": "0", 
+            "transiti": "129273"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "39", 
+            "numero_giorni": "0", 
+            "transiti": "125518"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "40", 
+            "numero_giorni": "0", 
+            "transiti": "125951"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "41", 
+            "numero_giorni": "0", 
+            "transiti": "128562"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "42", 
+            "numero_giorni": "0", 
+            "transiti": "130552"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "43", 
+            "numero_giorni": "0", 
+            "transiti": "133937"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "44", 
+            "numero_giorni": "0", 
+            "transiti": "115668"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "45", 
+            "numero_giorni": "0", 
+            "transiti": "127425"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "46", 
+            "numero_giorni": "0", 
+            "transiti": "131259"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "47", 
+            "numero_giorni": "0", 
+            "transiti": "130917"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "48", 
+            "numero_giorni": "0", 
+            "transiti": "127924"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "49", 
+            "numero_giorni": "0", 
+            "transiti": "136073"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "50", 
+            "numero_giorni": "0", 
+            "transiti": "144645"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "51", 
+            "numero_giorni": "0", 
+            "transiti": "146683"
+        }, 
+        {
+            "anno": "2011", 
+            "settimana": "52", 
+            "numero_giorni": "0", 
+            "transiti": "86619"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "3", 
+            "numero_giorni": "5", 
+            "transiti": "78569"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "4", 
+            "numero_giorni": "4", 
+            "transiti": "81798"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "5", 
+            "numero_giorni": "5", 
+            "transiti": "83999"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "6", 
+            "numero_giorni": "5", 
+            "transiti": "89860"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "7", 
+            "numero_giorni": "5", 
+            "transiti": "90157"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "8", 
+            "numero_giorni": "5", 
+            "transiti": "87526"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "9", 
+            "numero_giorni": "4", 
+            "transiti": "91199"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "10", 
+            "numero_giorni": "5", 
+            "transiti": "92520"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "11", 
+            "numero_giorni": "4", 
+            "transiti": "89847"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "12", 
+            "numero_giorni": "5", 
+            "transiti": "89962"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "13", 
+            "numero_giorni": "5", 
+            "transiti": "89872"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "14", 
+            "numero_giorni": "5", 
+            "transiti": "86854"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "15", 
+            "numero_giorni": "4", 
+            "transiti": "88782"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "16", 
+            "numero_giorni": "5", 
+            "transiti": "103088"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "17", 
+            "numero_giorni": "4", 
+            "transiti": "89141"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "18", 
+            "numero_giorni": "4", 
+            "transiti": "82020"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "19", 
+            "numero_giorni": "5", 
+            "transiti": "92820"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "20", 
+            "numero_giorni": "5", 
+            "transiti": "91609"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "21", 
+            "numero_giorni": "5", 
+            "transiti": "93258"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "22", 
+            "numero_giorni": "5", 
+            "transiti": "88449"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "23", 
+            "numero_giorni": "5", 
+            "transiti": "91805"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "24", 
+            "numero_giorni": "5", 
+            "transiti": "89149"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "25", 
+            "numero_giorni": "4", 
+            "transiti": "88064"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "26", 
+            "numero_giorni": "5", 
+            "transiti": "88043"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "27", 
+            "numero_giorni": "5", 
+            "transiti": "84967"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "28", 
+            "numero_giorni": "5", 
+            "transiti": "82917"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "29", 
+            "numero_giorni": "4", 
+            "transiti": "82785"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "30", 
+            "numero_giorni": "3", 
+            "transiti": "78708"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "38", 
+            "numero_giorni": "5", 
+            "transiti": "97715"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "39", 
+            "numero_giorni": "5", 
+            "transiti": "97159"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "40", 
+            "numero_giorni": "4", 
+            "transiti": "92728"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "41", 
+            "numero_giorni": "5", 
+            "transiti": "93425"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "42", 
+            "numero_giorni": "5", 
+            "transiti": "95320"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "43", 
+            "numero_giorni": "5", 
+            "transiti": "94303"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "44", 
+            "numero_giorni": "4", 
+            "transiti": "88254"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "45", 
+            "numero_giorni": "5", 
+            "transiti": "94652"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "46", 
+            "numero_giorni": "5", 
+            "transiti": "96497"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "47", 
+            "numero_giorni": "5", 
+            "transiti": "96447"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "48", 
+            "numero_giorni": "4", 
+            "transiti": "102212"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "49", 
+            "numero_giorni": "4", 
+            "transiti": "101335"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "50", 
+            "numero_giorni": "5", 
+            "transiti": "102945"
+        }, 
+        {
+            "anno": "2012", 
+            "settimana": "51", 
+            "numero_giorni": "5", 
+            "transiti": "115403"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "2", 
+            "numero_giorni": "5", 
+            "transiti": "87067"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "3", 
+            "numero_giorni": "5", 
+            "transiti": "96724"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "4", 
+            "numero_giorni": "5", 
+            "transiti": "94249"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "5", 
+            "numero_giorni": "5", 
+            "transiti": "95189"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "6", 
+            "numero_giorni": "5", 
+            "transiti": "94682"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "7", 
+            "numero_giorni": "5", 
+            "transiti": "86371"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "8", 
+            "numero_giorni": "5", 
+            "transiti": "100009"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "9", 
+            "numero_giorni": "5", 
+            "transiti": "96742"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "10", 
+            "numero_giorni": "5", 
+            "transiti": "98602"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "11", 
+            "numero_giorni": "5", 
+            "transiti": "96767"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "12", 
+            "numero_giorni": "4", 
+            "transiti": "98071"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "13", 
+            "numero_giorni": "5", 
+            "transiti": "93521"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "14", 
+            "numero_giorni": "4", 
+            "transiti": "90068"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "15", 
+            "numero_giorni": "4", 
+            "transiti": "105297"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "16", 
+            "numero_giorni": "5", 
+            "transiti": "95776"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "17", 
+            "numero_giorni": "4", 
+            "transiti": "88030"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "18", 
+            "numero_giorni": "4", 
+            "transiti": "90141"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "19", 
+            "numero_giorni": "5", 
+            "transiti": "100391"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "20", 
+            "numero_giorni": "5", 
+            "transiti": "97674"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "21", 
+            "numero_giorni": "5", 
+            "transiti": "97338"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "22", 
+            "numero_giorni": "4", 
+            "transiti": "95553"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "23", 
+            "numero_giorni": "5", 
+            "transiti": "93871"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "24", 
+            "numero_giorni": "4", 
+            "transiti": "90023"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "25", 
+            "numero_giorni": "5", 
+            "transiti": "92066"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "26", 
+            "numero_giorni": "5", 
+            "transiti": "90818"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "27", 
+            "numero_giorni": "5", 
+            "transiti": "85256"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "28", 
+            "numero_giorni": "5", 
+            "transiti": "85594"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "29", 
+            "numero_giorni": "5", 
+            "transiti": "83976"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "30", 
+            "numero_giorni": "5", 
+            "transiti": "81668"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "31", 
+            "numero_giorni": "5", 
+            "transiti": "74295"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "32", 
+            "numero_giorni": "5", 
+            "transiti": "52914"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "35", 
+            "numero_giorni": "5", 
+            "transiti": "56475"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "36", 
+            "numero_giorni": "5", 
+            "transiti": "78112"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "37", 
+            "numero_giorni": "5", 
+            "transiti": "89753"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "38", 
+            "numero_giorni": "5", 
+            "transiti": "99032"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "39", 
+            "numero_giorni": "5", 
+            "transiti": "97276"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "40", 
+            "numero_giorni": "5", 
+            "transiti": "95455"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "41", 
+            "numero_giorni": "5", 
+            "transiti": "98813"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "42", 
+            "numero_giorni": "4", 
+            "transiti": "95287"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "43", 
+            "numero_giorni": "5", 
+            "transiti": "98294"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "44", 
+            "numero_giorni": "4", 
+            "transiti": "84511"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "45", 
+            "numero_giorni": "5", 
+            "transiti": "96742"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "46", 
+            "numero_giorni": "5", 
+            "transiti": "98238"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "47", 
+            "numero_giorni": "5", 
+            "transiti": "101404"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "48", 
+            "numero_giorni": "5", 
+            "transiti": "99069"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "49", 
+            "numero_giorni": "4", 
+            "transiti": "99790"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "50", 
+            "numero_giorni": "5", 
+            "transiti": "103503"
+        }, 
+        {
+            "anno": "2013", 
+            "settimana": "51", 
+            "numero_giorni": "4", 
+            "transiti": "115792"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "2", 
+            "numero_giorni": "4", 
+            "transiti": "87253"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "3", 
+            "numero_giorni": "5", 
+            "transiti": "99333"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "4", 
+            "numero_giorni": "4", 
+            "transiti": "96187"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "5", 
+            "numero_giorni": "5", 
+            "transiti": "96531"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "6", 
+            "numero_giorni": "5", 
+            "transiti": "98738"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "7", 
+            "numero_giorni": "5", 
+            "transiti": "98703"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "8", 
+            "numero_giorni": "5", 
+            "transiti": "102056"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "9", 
+            "numero_giorni": "5", 
+            "transiti": "95553"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "10", 
+            "numero_giorni": "4", 
+            "transiti": "87040"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "11", 
+            "numero_giorni": "5", 
+            "transiti": "95967"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "12", 
+            "numero_giorni": "4", 
+            "transiti": "93976"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "13", 
+            "numero_giorni": "5", 
+            "transiti": "98191"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "14", 
+            "numero_giorni": "5", 
+            "transiti": "97555"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "15", 
+            "numero_giorni": "5", 
+            "transiti": "102630"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "16", 
+            "numero_giorni": "5", 
+            "transiti": "92272"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "17", 
+            "numero_giorni": "3", 
+            "transiti": "74542"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "18", 
+            "numero_giorni": "4", 
+            "transiti": "88366"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "19", 
+            "numero_giorni": "5", 
+            "transiti": "96460"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "20", 
+            "numero_giorni": "5", 
+            "transiti": "95262"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "21", 
+            "numero_giorni": "5", 
+            "transiti": "89161"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "22", 
+            "numero_giorni": "4", 
+            "transiti": "97858"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "23", 
+            "numero_giorni": "4", 
+            "transiti": "95483"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "24", 
+            "numero_giorni": "5", 
+            "transiti": "91091"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "25", 
+            "numero_giorni": "5", 
+            "transiti": "91573"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "26", 
+            "numero_giorni": "5", 
+            "transiti": "94009"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "27", 
+            "numero_giorni": "5", 
+            "transiti": "87673"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "28", 
+            "numero_giorni": "5", 
+            "transiti": "86909"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "29", 
+            "numero_giorni": "5", 
+            "transiti": "83946"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "30", 
+            "numero_giorni": "5", 
+            "transiti": "85390"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "31", 
+            "numero_giorni": "5", 
+            "transiti": "79689"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "35", 
+            "numero_giorni": "5", 
+            "transiti": "53430"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "36", 
+            "numero_giorni": "5", 
+            "transiti": "80571"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "37", 
+            "numero_giorni": "5", 
+            "transiti": "93686"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "38", 
+            "numero_giorni": "5", 
+            "transiti": "101326"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "39", 
+            "numero_giorni": "5", 
+            "transiti": "96210"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "40", 
+            "numero_giorni": "5", 
+            "transiti": "96719"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "41", 
+            "numero_giorni": "5", 
+            "transiti": "100582"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "42", 
+            "numero_giorni": "5", 
+            "transiti": "95190"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "43", 
+            "numero_giorni": "4", 
+            "transiti": "95730"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "44", 
+            "numero_giorni": "5", 
+            "transiti": "95396"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "45", 
+            "numero_giorni": "5", 
+            "transiti": "100319"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "46", 
+            "numero_giorni": "5", 
+            "transiti": "104031"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "47", 
+            "numero_giorni": "5", 
+            "transiti": "99869"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "48", 
+            "numero_giorni": "5", 
+            "transiti": "103371"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "49", 
+            "numero_giorni": "5", 
+            "transiti": "101450"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "50", 
+            "numero_giorni": "4", 
+            "transiti": "104101"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "51", 
+            "numero_giorni": "5", 
+            "transiti": "110999"
+        }, 
+        {
+            "anno": "2014", 
+            "settimana": "52", 
+            "numero_giorni": "2", 
+            "transiti": "107590"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "2", 
+            "numero_giorni": "3", 
+            "transiti": "90141"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "3", 
+            "numero_giorni": "5", 
+            "transiti": "96157"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "4", 
+            "numero_giorni": "5", 
+            "transiti": "99064"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "5", 
+            "numero_giorni": "5", 
+            "transiti": "98436"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "6", 
+            "numero_giorni": "5", 
+            "transiti": "98083"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "7", 
+            "numero_giorni": "5", 
+            "transiti": "97950"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "8", 
+            "numero_giorni": "5", 
+            "transiti": "92225"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "9", 
+            "numero_giorni": "5", 
+            "transiti": "104530"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "10", 
+            "numero_giorni": "5", 
+            "transiti": "98080"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "11", 
+            "numero_giorni": "5", 
+            "transiti": "96125"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "12", 
+            "numero_giorni": "5", 
+            "transiti": "99333"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "13", 
+            "numero_giorni": "5", 
+            "transiti": "100803"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "14", 
+            "numero_giorni": "5", 
+            "transiti": "93351"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "15", 
+            "numero_giorni": "4", 
+            "transiti": "90934"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "16", 
+            "numero_giorni": "5", 
+            "transiti": "107515"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "17", 
+            "numero_giorni": "5", 
+            "transiti": "97573"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "18", 
+            "numero_giorni": "3", 
+            "transiti": "102746"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "19", 
+            "numero_giorni": "5", 
+            "transiti": "98485"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "20", 
+            "numero_giorni": "5", 
+            "transiti": "98030"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "21", 
+            "numero_giorni": "5", 
+            "transiti": "101781"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "22", 
+            "numero_giorni": "5", 
+            "transiti": "99176"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "23", 
+            "numero_giorni": "4", 
+            "transiti": "87802"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "24", 
+            "numero_giorni": "5", 
+            "transiti": "96712"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "25", 
+            "numero_giorni": "5", 
+            "transiti": "94910"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "26", 
+            "numero_giorni": "5", 
+            "transiti": "92491"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "27", 
+            "numero_giorni": "5", 
+            "transiti": "88277"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "28", 
+            "numero_giorni": "5", 
+            "transiti": "89951"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "29", 
+            "numero_giorni": "5", 
+            "transiti": "87763"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "30", 
+            "numero_giorni": "5", 
+            "transiti": "86908"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "31", 
+            "numero_giorni": "5", 
+            "transiti": "84624"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "32", 
+            "numero_giorni": "5", 
+            "transiti": "59470"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "34", 
+            "numero_giorni": "5", 
+            "transiti": "36920"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "35", 
+            "numero_giorni": "5", 
+            "transiti": "49392"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "36", 
+            "numero_giorni": "5", 
+            "transiti": "80454"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "37", 
+            "numero_giorni": "5", 
+            "transiti": "95502"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "38", 
+            "numero_giorni": "5", 
+            "transiti": "98763"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "39", 
+            "numero_giorni": "5", 
+            "transiti": "103760"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "40", 
+            "numero_giorni": "5", 
+            "transiti": "99411"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "41", 
+            "numero_giorni": "5", 
+            "transiti": "98004"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "42", 
+            "numero_giorni": "5", 
+            "transiti": "102837"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "43", 
+            "numero_giorni": "5", 
+            "transiti": "98558"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "44", 
+            "numero_giorni": "5", 
+            "transiti": "96847"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "45", 
+            "numero_giorni": "5", 
+            "transiti": "95252"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "46", 
+            "numero_giorni": "5", 
+            "transiti": "95439"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "47", 
+            "numero_giorni": "5", 
+            "transiti": "97513"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "48", 
+            "numero_giorni": "5", 
+            "transiti": "103999"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "49", 
+            "numero_giorni": "5", 
+            "transiti": "103219"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "50", 
+            "numero_giorni": "3", 
+            "transiti": "108931"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "51", 
+            "numero_giorni": "5", 
+            "transiti": "111358"
+        }, 
+        {
+            "anno": "2015", 
+            "settimana": "52", 
+            "numero_giorni": "4", 
+            "transiti": "104081"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "1", 
+            "numero_giorni": "2", 
+            "transiti": "84345"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "2", 
+            "numero_giorni": "5", 
+            "transiti": "94043"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "3", 
+            "numero_giorni": "5", 
+            "transiti": "98277"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "4", 
+            "numero_giorni": "5", 
+            "transiti": "95243"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "5", 
+            "numero_giorni": "5", 
+            "transiti": "94916"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "6", 
+            "numero_giorni": "5", 
+            "transiti": "91551"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "7", 
+            "numero_giorni": "5", 
+            "transiti": "95776"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "8", 
+            "numero_giorni": "5", 
+            "transiti": "99129"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "9", 
+            "numero_giorni": "5", 
+            "transiti": "96900"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "10", 
+            "numero_giorni": "5", 
+            "transiti": "94063"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "11", 
+            "numero_giorni": "5", 
+            "transiti": "96668"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "12", 
+            "numero_giorni": "5", 
+            "transiti": "89507"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "13", 
+            "numero_giorni": "4", 
+            "transiti": "89510"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "14", 
+            "numero_giorni": "5", 
+            "transiti": "97178"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "15", 
+            "numero_giorni": "5", 
+            "transiti": "100747"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "16", 
+            "numero_giorni": "5", 
+            "transiti": "92802"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "17", 
+            "numero_giorni": "4", 
+            "transiti": "93747"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "18", 
+            "numero_giorni": "5", 
+            "transiti": "91424"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "19", 
+            "numero_giorni": "5", 
+            "transiti": "100408"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "20", 
+            "numero_giorni": "5", 
+            "transiti": "96518"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "21", 
+            "numero_giorni": "5", 
+            "transiti": "96735"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "22", 
+            "numero_giorni": "4", 
+            "transiti": "89790"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "23", 
+            "numero_giorni": "5", 
+            "transiti": "92837"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "24", 
+            "numero_giorni": "5", 
+            "transiti": "89640"
+        }, 
+        {
+            "anno": "2016", 
+            "settimana": "25", 
+            "numero_giorni": "5", 
+            "transiti": "91032"
+        }
+    ]
+}

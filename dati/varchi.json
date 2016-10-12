@@ -1,0 +1,305 @@
+{
+    "dati": [
+        {
+            "lat": "9.16529160119685", 
+            "lon": "45.4628393273515", 
+            "id": "90", 
+            "tipo": "Pedaggio", 
+            "nome": "BANDELLO"
+        }, 
+        {
+            "lat": "9.1659951390863", 
+            "lon": "45.4646400054629", 
+            "id": "91", 
+            "tipo": "Pedaggio", 
+            "nome": "SAN VITTORE"
+        }, 
+        {
+            "lat": "9.16605862635026", 
+            "lon": "45.4694235851656", 
+            "id": "96", 
+            "tipo": "Pedaggio", 
+            "nome": "MASCHERONI"
+        }, 
+        {
+            "lat": "9.16637724018541", 
+            "lon": "45.4659497748723", 
+            "id": "92", 
+            "tipo": "Tpl", 
+            "nome": "MAGENTA"
+        }, 
+        {
+            "lat": "9.16643454439999", 
+            "lon": "45.4678983482685", 
+            "id": "95", 
+            "tipo": "Pedaggio", 
+            "nome": "BAZZONI"
+        }, 
+        {
+            "lat": "9.1668579139757", 
+            "lon": "45.4677715592158", 
+            "id": "94", 
+            "tipo": "Pedaggio", 
+            "nome": "XX SETTEMBRE"
+        }, 
+        {
+            "lat": "9.16692400998873", 
+            "lon": "45.4674699804057", 
+            "id": "93", 
+            "tipo": "Pedaggio", 
+            "nome": "BOCCACCIO"
+        }, 
+        {
+            "lat": "9.16691349630027", 
+            "lon": "45.460318647698", 
+            "id": "89", 
+            "tipo": "Tpl", 
+            "nome": "OLIVETANI"
+        }, 
+        {
+            "lat": "9.16862245643641", 
+            "lon": "45.4593180995061", 
+            "id": "88", 
+            "tipo": "Pedaggio", 
+            "nome": "SERVIO TULLIO"
+        }, 
+        {
+            "lat": "9.16908759144469", 
+            "lon": "45.4709162126592", 
+            "id": "97", 
+            "tipo": "Pedaggio", 
+            "nome": "MONTI"
+        }, 
+        {
+            "lat": "9.16975259571795", 
+            "lon": "45.4586533465426", 
+            "id": "87", 
+            "tipo": "Pedaggio", 
+            "nome": "SANT'AGOSTINO"
+        }, 
+        {
+            "lat": "9.17010330562474", 
+            "lon": "45.4738065967168", 
+            "id": "98", 
+            "tipo": "Pedaggio", 
+            "nome": "MILTON"
+        }, 
+        {
+            "lat": "9.17137166753147", 
+            "lon": "45.457606542825", 
+            "id": "86", 
+            "tipo": "Pedaggio", 
+            "nome": "AUSONIO"
+        }, 
+        {
+            "lat": "9.17376893922904", 
+            "lon": "45.4559827494488", 
+            "id": "85", 
+            "tipo": "Pedaggio", 
+            "nome": "GENOVA"
+        }, 
+        {
+            "lat": "9.17628400234691", 
+            "lon": "45.4543321753981", 
+            "id": "84", 
+            "tipo": "Pedaggio", 
+            "nome": "RONZONI"
+        }, 
+        {
+            "lat": "9.17837663908078", 
+            "lon": "45.4532109252523", 
+            "id": "83", 
+            "tipo": "Pedaggio", 
+            "nome": "PANZERI"
+        }, 
+        {
+            "lat": "9.18027400620731", 
+            "lon": "45.4532553794878", 
+            "id": "82", 
+            "tipo": "Tpl", 
+            "nome": "PORTA TICINESE"
+        }, 
+        {
+            "lat": "9.1810949960991", 
+            "lon": "45.4769479135706", 
+            "id": "58", 
+            "tipo": "Pedaggio", 
+            "nome": "LEGNANO"
+        }, 
+        {
+            "lat": "9.18173638705536", 
+            "lon": "45.4776150167559", 
+            "id": "57", 
+            "tipo": "Pedaggio", 
+            "nome": "PORTA TENAGLIA"
+        }, 
+        {
+            "lat": "9.18190290986495", 
+            "lon": "45.4782829620525", 
+            "id": "59", 
+            "tipo": "Pedaggio", 
+            "nome": "MOSCOVA"
+        }, 
+        {
+            "lat": "9.18292490960542", 
+            "lon": "45.4805231877769", 
+            "id": "60", 
+            "tipo": "Pedaggio", 
+            "nome": "VOLTA"
+        }, 
+        {
+            "lat": "9.18441186068975", 
+            "lon": "45.4528082608016", 
+            "id": "81", 
+            "tipo": "Pedaggio", 
+            "nome": "AURISPA"
+        }, 
+        {
+            "lat": "9.18652972237672", 
+            "lon": "45.4801481210917", 
+            "id": "61", 
+            "tipo": "Pedaggio", 
+            "nome": "GARIBALDI"
+        }, 
+        {
+            "lat": "9.18681708794801", 
+            "lon": "45.4525896313909", 
+            "id": "80", 
+            "tipo": "Tpl", 
+            "nome": "ITALIA"
+        }, 
+        {
+            "lat": "9.18783856180101", 
+            "lon": "45.4799208137709", 
+            "id": "62", 
+            "tipo": "Pedaggio", 
+            "nome": "MILAZZO"
+        }, 
+        {
+            "lat": "9.18865492020774", 
+            "lon": "45.4523680183846", 
+            "id": "79", 
+            "tipo": "Pedaggio", 
+            "nome": "MELEGNANO"
+        }, 
+        {
+            "lat": "9.19105435598674", 
+            "lon": "45.4522875416029", 
+            "id": "78", 
+            "tipo": "Pedaggio", 
+            "nome": "BIANCA DI SAVOIA"
+        }, 
+        {
+            "lat": "9.19149691482653", 
+            "lon": "45.4794558677973", 
+            "id": "63", 
+            "tipo": "Pedaggio", 
+            "nome": "CASTELFIDARDO"
+        }, 
+        {
+            "lat": "9.19574879419328", 
+            "lon": "45.4772199571292", 
+            "id": "64", 
+            "tipo": "Pedaggio", 
+            "nome": "TURATI"
+        }, 
+        {
+            "lat": "9.19644482033831", 
+            "lon": "45.4523073925782", 
+            "id": "77", 
+            "tipo": "Tpl", 
+            "nome": "PORTA VIGENTINA"
+        }, 
+        {
+            "lat": "9.19891524963364", 
+            "lon": "45.4522966448722", 
+            "id": "76", 
+            "tipo": "Pedaggio", 
+            "nome": "CABRINI"
+        }, 
+        {
+            "lat": "9.20156837474178", 
+            "lon": "45.4525648665049", 
+            "id": "75", 
+            "tipo": "Pedaggio", 
+            "nome": "PORTA ROMANA"
+        }, 
+        {
+            "lat": "9.20275349378272", 
+            "lon": "45.4551514780393", 
+            "id": "74", 
+            "tipo": "Pedaggio", 
+            "nome": "CURTATONE"
+        }, 
+        {
+            "lat": "9.20411371281742", 
+            "lon": "45.4573920033913", 
+            "id": "73", 
+            "tipo": "Tpl", 
+            "nome": "LAMARMORA"
+        }, 
+        {
+            "lat": "9.20451052160064", 
+            "lon": "45.4739996532999", 
+            "id": "65", 
+            "tipo": "Pedaggio", 
+            "nome": "VENEZIA"
+        }, 
+        {
+            "lat": "9.20503767573354", 
+            "lon": "45.4715453649077", 
+            "id": "66", 
+            "tipo": "Pedaggio", 
+            "nome": "BARETTI"
+        }, 
+        {
+            "lat": "9.20506298038213", 
+            "lon": "45.4708421909421", 
+            "id": "67", 
+            "tipo": "Pedaggio", 
+            "nome": "VITALI"
+        }, 
+        {
+            "lat": "9.20528237775028", 
+            "lon": "45.4694373399137", 
+            "id": "68", 
+            "tipo": "Pedaggio", 
+            "nome": "ROSSINI"
+        }, 
+        {
+            "lat": "9.20546401718209", 
+            "lon": "45.4677464626012", 
+            "id": "69", 
+            "tipo": "Pedaggio", 
+            "nome": "MONFORTE"
+        }, 
+        {
+            "lat": "9.20558465056198", 
+            "lon": "45.4665135875766", 
+            "id": "70", 
+            "tipo": "Pedaggio", 
+            "nome": "MASCAGNI"
+        }, 
+        {
+            "lat": "9.20607430355269", 
+            "lon": "45.4601027350905", 
+            "id": "72", 
+            "tipo": "Pedaggio", 
+            "nome": "BESANA"
+        }, 
+        {
+            "lat": "9.20635379161651", 
+            "lon": "45.462270657535", 
+            "id": "71", 
+            "tipo": "Tpl", 
+            "nome": "PORTA VITTORIA"
+        }, 
+        {
+            "lat": "9.20636564064416", 
+            "lon": "45.4623962689648", 
+            "id": "71", 
+            "tipo": "Pedaggio", 
+            "nome": "PORTA VITTORIA"
+        }
+    ]
+}

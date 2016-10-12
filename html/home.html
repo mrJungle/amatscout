@@ -1,0 +1,169 @@
+<div ng-if="showSpinner"style="  top: 0px;
+height: 100%;
+  left: 0px; 
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  position:fixed;
+  z-index: 5000;
+  color:#000;
+  background: rgba(0,0,0,0.8);
+  color:#fff;">
+
+<span us-spinner="{radius:30, width:8, length: 16, color: 'white'}" spinner-on="showSpinner"></span>
+</div>
+
+<a  du-smooth-scroll duration="500" id="bottone_totop" class="scrollToTop_d" ng-click="goto('up')" href="">
+    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+</a>
+
+<div ng-if="autenticato" class="indice indiceOut rotate" ng-class="{'indiceOut': toolsClass, 'indiceIn': !toolsClass} ">
+	
+	<div class="col-lg-12" style="margin:10px;">
+		<button class="btn btn-link pull-right" aria-label="Right Align" ng-click="IndiceOpen()" style="color:#fff;margin:0px;"><span class="glyphicon glyphicon-plus" ng-class="{'glyphicon-plus': toolsClass, 'glyphicon-remove': !toolsClass} " ></span></button>
+	</div>
+
+
+
+	<div class="col-lg-12 animated slideInUp pOut" ng-class="{'pOut': toolsClass, 'pIn': !toolsClass} ">
+		<div class="col-lg-12">
+		  <div class="form-group">
+		    <label for="nome">Nome</label>
+		    <input type="text" class="form-control" id="nome" placeholder="Nome Località" ng-model="item2Add.nome">
+		  </div>
+		  <div ng-if="checkLocalita()" class="alert alert-danger" role="alert">La località è gia presente</div>
+		 <div class="form-group">
+		  		    <label for="lat">Latitudine</label>
+		  		    <input type="numeric" class="form-control" id="lat" placeholder="lat" ng-model="item2Add.lat">
+		  </div>
+		  <div class="form-group">
+		    <label for="lng">Longitudine</label>
+		    <input type="numeric" class="form-control" id="lng" placeholder="lng" ng-model="item2Add.lng">
+		  </div>
+
+		<button class="btn btn-primary btn-lg  btn-block" type="submit" ng-click="addItemCampagna(item2Add)" ng-class="{'ddd': !checkLocalita(), 'disabled': checkLocalita()} ">Add </button>
+
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+<div class="boxmappa">
+  <div class="container-fluid animated slideInDown" style="padding-top: 20px;">
+	<div class="col-lg-12" style="background-color: #fff;padding: 0px;margin: 0px;">
+	  <leaflet center="london" tiles="tiles" legend="legend" defaults="defaults"  width="100%" height="350px" markers="localitaServiceArr[numLastModifica].listaLocalita" >
+	  </leaflet>
+	</div>
+  </div>
+  <!-- legend="legend" -->
+	<div class="container animated slideInDown" style="padding:5px 5px 5px 5px;" >
+    
+			<div class="input-group input-group-lg" >
+		  <span class="input-group-addon glyphicon glyphicon-search" id="sizing-addon1" style="margin-top:-4px;top: 0px;"></span>
+		  <input type="text" ng-model="localitaFilter" class="form-control" placeholder="Filtra Località" aria-describedby="sizing-addon1">
+		   <span class="input-group-addon btn-danger glyphicon glyphicon-remove" ng-click="cancellaFilter()" style="margin-top:-4px;top: 0px;border-color: #b92c28;color:white;ackground-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);"></span>
+		
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="up" class="container animated slideInUp" style="background: rgba(0, 0, 0, 0.01);border-radius: 5px;margin-bottom: 25px;margin-top: 430px;max-height: 400px;" ng-if="!caricamentoDati">
+
+	
+	
+	<div class="col-lg-12 col-md-12  col-sm-12 col-xs-12"  style="background: rgba(255,255,255,0);margin-bottom: 25px;padding-top: 3px;padding-bottom: 3px;">
+
+
+
+
+<div class="col-lg-12" style="border-top: 1px solid rgba(0,0,0,0.13);margin-top:25px;margin-bottom:25px;border-radius: 30px;"></div>
+
+
+
+<div ng-mouseenter="statoEvidenziato()" ng-mouseleave="statoDeEvidenziato()">
+<div class="col-lg-12" ng-repeat="c in filtra(localitaServiceArr[numLastModifica].listaLocalita) | orderObjectBy: 'name' : false" id="{{c.id}}" >
+
+  <div class="col-lg-12 daevidenziare"  ng-mouseenter="evidenzia(c)" ng-mouseleave="deEvidenzia(c)" style="padding: 10px 20px 15px 20px;margin:5px;">
+    <h4 style="border-left:solid 14px {{c.icon.markerColor}};padding-left: 10px;"><strong>{{c.name | uppercase}}</strong>
+		<a class="btn btn-default pull-right" type="button" ng-click="centraCampagna(c)" style="margin-left: 10px;margin-top:-5px;">
+		  <span class="glyphicon glyphicon-map-marker" aria-hidden="true" ></span>
+		</a>
+		<a ng-if="autenticato" class="btn btn-default pull-right" type="button" ng-click="open(c)" style="margin-left: 10px;margin-top:-5px;">
+		  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+		</a>
+
+
+
+
+    </h4>
+  <div class="col-lg-12" style="padding:0px;margin:15px 5px 5px 5px ;border-left: solid 5px {{c.icon.markerColor}};">
+  
+	<table class="table table-bordered" style="margin-bottom: 0px;">
+		<thead> 
+			<tr> 
+			<th>Data Rilievo</th> 
+			<th>Tipo Rilievo</th> 
+			<th>Link di dettaglio</th>
+			<th>Filmati registrati</th>
+			</tr> 
+		</thead> 
+		<tbody> 
+		  <tr ng-repeat="r in c.rilievi | orderBy : '-giorno'">
+			<td >  
+			  <h6>{{convertiData(r.giorno) | date:'dd-MM-yyyy'}}</h6>
+		  	</td>
+		  	<td>
+		  	<i class="fa fa-{{r.icon}}" aria-hidden="true"></i>
+		  	</td>
+		    <td>
+			  <h6>
+				<a href="{{r.link}}" target="_blank" style="margin-left: 10px;margin-top:-5px;">{{r.link}}</a>
+			  </h6>
+		  	</td>
+		  	<td>
+				<a class="btn btn-default pull-right" type="button" ng- style="margin-left: 10px;margin-top:-5px;" ui-sref="app.rilievo({campagnaId:c.id,  rilievoId:convertiDataInt(r.giorno)})">{{contaVideo(r)}}<span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="margin-left: 10px;"></span>
+				</a>
+		  	</td>
+			</tr> 
+		</tbody> 
+	</table>  
+
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<div class="col-lg-12" style="min-height: 330px;"></div>
+
+</div>

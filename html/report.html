@@ -1,0 +1,318 @@
+<div class="indice indiceOut rotate" ng-class="{'indiceOut': !toolsClass, 'indiceIn': toolsClass} ">
+<div class="col-lg-12 col-xs-12" style="margin:0px;padding:0px;" >
+  <a class="btn btn-link pull-right" aria-label="Right Align" ng-click="IndiceOpen()" style="color:#fff;margin:0px;"><h2><span class="glyphicon glyphicon-th-list rotate" ng-class="{'glyphicon-th-list': !toolsClass, 'glyphicon-remove': toolsClass} " ></span></h2></a> 
+  </div>
+
+<div  class="col-lg-12 col-xs-12 pOut"  ng-class="{'pOut': !toolsClass, 'pIn': toolsClass} ">
+
+<h2 class="text-center" style="margin-bottom: 20px;font-family: 'Orbitron', sans-serif;">INDICE</h2>
+
+<h4 ng-click="goto('intro')" style="color:#fff;margin:0px;">Premessa </h4>
+
+  <hr style="margin:5px 5px  5px  5px ;border-top: rgba(255,255,255, 0.18) solid 1px;">
+
+<h4 ng-click="goto('datigenerali')" style="color:#fff;margin:0px;">Dati Generali </h4>
+
+  <hr style="margin:5px 5px  5px  5px ;border-top: rgba(255,255,255, 0.18) solid 1px;">
+
+<h4 ng-click="goto('ingressigiorno')" style="color:#fff;margin:0px;">Andamento degli ingressi </h4>
+
+  <hr style="margin:5px 5px  5px  5px ;border-top: rgba(255,255,255, 0.18) solid 1px;">
+
+<h4 ng-click="goto('classi')" style="color:#fff;margin:0px;">Classificazione degli accessi </h4>
+
+  <hr style="margin:5px 5px  5px  5px ;border-top: rgba(255,255,255, 0.18) solid 1px;">
+
+<h4 ng-click="goto('orario')" style="color:#fff;margin:0px;">Andamento orario </h4>
+
+  <hr style="margin:5px 5px  5px  5px ;border-top: rgba(255,255,255, 0.18) solid 1px;">
+
+<h4  ng-click="goto('freq')" style="color:#fff;margin:0px;">Frequenza degli accessi</h4>
+
+
+  </div> 
+</div>
+
+<div ng-if ="false" class="indice animated slideInDown indiceOut rotate" ng-class="{'slideInRight': toolsClass, 'slideOutRight': !toolsClass} ">
+  <a class="btn btn-link" aria-label="Right Align" ng-click="IndiceOpen()"><h2><span class="glyphicon glyphicon-th-list rotate" ng-class="{'glyphicon-th-list': toolsClass, 'glyphicon-chevron-left': !toolsClass} " >INDICE</span></h2>
+    </a> 
+</div>
+
+
+
+<div class="container-fluid  animated slideInDown" style="padding-top:55px;margin:0px;background: #961212;min-height: 450px;color:#fff;margin-bottom: -150px;">
+	<div class="jumbotron" style="background: rgba(0,0,0,0);">
+	  <h1 class="text-center" style="font-family: 'Orbitron', sans-serif;">Report</h1>
+	  <p class="text-center" style="font-family: 'Orbitron', sans-serif;" >Aggiornamento degli ingressi ad Area C</p>
+	</div>
+</div>
+
+
+<div class="container animated slideInUp" style="background: rgba(0, 0, 0, 0.4);border-radius: 5px;margin-bottom: 250px;padding: 50px 30px 30px 30px;font-size: 1.4em;" >
+	
+
+
+  <div id ="intro" class="col-lg-12 col-md-12  col-sm-12 col-xs-12"  style="background: rgba(255,255,255,1);margin-bottom: 15px;padding-top: 30px;padding-bottom: 30px;border-left: solid 5px cyan;">
+    <div class="row">
+      <div class="col-lg-3" style="background-color: cyan;min-height: 55px;padding-top:15px;margin-left:-20px;">
+      <h4 class="text-center" style="font-family: 'Orbitron', sans-serif;">0 - Premessa</h4>
+      </div>
+      <div class="col-lg-9">
+
+
+      </div>
+      </div>
+      <hr>
+
+
+      <div class="row" style="padding-right: 20px;">
+<div class="col-lg-11 col-lg-offset-1">
+        <p class="text-justify">Il presente report sintetizza i risultati del monitoraggio Area C al <strong>{{(web_0Promise|orderBy:'-anno')[0].data_fine}}</strong>.</p>
+        <p class="text-justify">I dati riportati sono ricavati dal sistema di varchi elettronici che controlla tutti i transiti veicolari in ingresso all’area. Per ogni targa in transito, sono ricavate dal database della motorizzazione civile le informazioni necessarie per una classificazione dei veicoli in funzione della tipologia, dell’alimentazione e della classe Euro, al fine di caratterizzare il veicolo in una delle classi definite dal provvedimento. </p>
+      
+        <p class="text-justify">Contestualmente alla redazione del report sono state aggiornate le serie storiche usate per diagnosticare e stimare i transiti ai varchi durante i periodi di malfunzionamento. Pertanto ci possono essere delle incongruenze con i valori dei transiti riportati in altri report di monitoraggio Area C</p>
+</div>
+
+
+</div>
+<hr style="margin-bottom:50px;margin-top:20px;">
+</div>
+
+  <div id ="datigenerali" class="col-lg-12 col-md-12  col-sm-12 col-xs-12"  style="background: rgba(255,255,255,1);margin-bottom: 15px;padding-top: 45px;padding-bottom: 30px;border-left: solid 5px orange;min-height: 900px;">
+    <div class="row">
+      <div class="col-lg-3" style="background-color: orange;min-height: 55px;padding-top:15px;margin-left:-20px;">
+      <h4 class="text-center" style="font-family: 'Orbitron', sans-serif;">0 - Dati Generali</h4>
+      </div>
+      <div class="col-lg-9">
+
+
+      </div>
+      </div>
+      <hr>
+<div class="row" style="padding-right: 20px;">
+
+<div class="col-lg-11 col-lg-offset-1" style="margin-top: 40px;">
+  <uib-tabset type="pills">
+    <uib-tab ng-repeat="w in web_0Promise|orderBy:'-anno'" heading="{{w.anno}}">
+
+
+<ul class="list-group" style="margin: 0px;padding:0px;box-shadow:none;">
+  <li class="list-group-item" style="margin: 35px 0px 35px 0px;padding:0px;border:solid #fff 0px;">
+  <p class="text-justify">Durante il Periodo considerato: dal <strong>{{w.data_inizio }}</strong> al <strong>{{ w.data_fine }}</strong> il provvedimento Area C è stato applicato per <strong>{{w.giorni_areac| number: 0 }} giorni</strong>
+  </p>
+  <p class="text-justify">Durante tale periodo si sono registrate le seguenti sospensioni:
+  <ul style="padding-right: 20px;">
+    <li ><strong>{{ w.festivita_infrasettimanali }}</strong> giorni di sospensione per festività infrasettimanali.</li>
+  <li ><strong>{{ w.sciopero }}</strong> giorni di sospensione del provvedimento per sciopero del Trasporto Pubblico Locale.</li>
+  <li ><strong>{{ w.sospensione }}</strong> giorni di sospensione della ZTL (durante la prima settimana di gennaio fino all’Epifania, nella settimana centrale di agosto e durante la sospensione natalizia)</li></ul>
+  </p>
+
+  <p class="text-justify">Sempre durante tale periodo il totale ingressi di accessi rilevati durante le fasce orarie con provvedimento attivo è di <strong>{{w.transiti_fasce_areac | number: 0}}</strong> transiti. Corripondenti ad un valore medio di ingressi giornalieri pari a <strong>{{ w.transiti_medi_fasce_areac| number: 0 }}</strong> </p>
+  <p class="text-justify">Considerando anche la fascia oraria del giovedì fra le h 18:00 e le h 19:30, interessata dall’anticipo del termine giornaliero del provvedimento, i valori di ingressi si portano rispettivamente a <strong>{{w.transiti_730_1930| number: 0}}</strong> e <strong>{{w.transiti_medi_730_1930| number: 0}}</strong> </p>
+  </li>
+</ul>
+    </uib-tab>
+  </uib-tabset>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-11 col-lg-offset-1" style="margin-top: 10px;">
+    <h5 style="margin-top: 5px;">Considerando lo stesso periodo nelle differenti annualità si sono rilevati i seguenti valori:<h5>
+    <div style="margin-top: 35px;">
+      <table class="table table-hover"> 
+      <thead> <tr> 
+      <th class="text-center">Anno</th> 
+      <th class="text-center">Periodo</th> 
+      <th class="text-center">N° giorni</th> 
+      <th class="text-center">Transiti totali fasce Area C</th> 
+      <th class="text-center">Transiti medi giornalieri fasce Area C</th> 
+      <th class="text-center">Transiti medi giornalieri 7:30-19:30</th> 
+      </tr> 
+      </thead> 
+      <tbody> 
+      <tr ng-repeat="w in web_0Promise|orderBy:'-anno'"> 
+      <td class="text-center">{{w.anno}}</td> 
+      <td class="text-center">{{w.data_inizio_sottoperiodo}} - {{w.data_fine_sottoperiodo}}</td> 
+      <td class="text-center">{{w.giorni_areac_sottoperiodo| number: 0}}</td> 
+      <td class="text-center">{{w.transiti_fasce_areac_sottoperiodo| number: 0}}</td> 
+      <td class="text-center">{{w.transiti_medi_fasce_areac_sottoperiodo| number: 0}}</td> 
+      <td class="text-center">{{w.transiti_medi_730_1930_sottoperiodo| number: 0}}</td> 
+      </tr> 
+       
+      </tbody> 
+      </table>
+    </div>
+</div>
+
+</div>
+
+<div class="row">
+
+
+
+
+
+<div class="col-lg-12" style="margin-top: 70px;">
+
+<nvd3 options="dataSetGraph_1.opzioni" data="dataSetGraph_1.dati"></nvd3>
+<h5 class="text-center">Tab 0.1 - Confronto annuale degli andamenti medi giornalieri nel periodo considerato</h5> 
+</div>
+</div>
+
+
+
+<div class="row">
+
+<div class="col-lg-12" style="margin-top: 70px;">
+<nvd3 options="dataSetGraph_2.opzioni" data="dataSetGraph_2.dati"></nvd3>
+<h5 class="text-center">Tab 0.2 - Confronto annuale degli ingressi totali nel periodo considerato</h5>
+</div>
+
+
+
+  </div>  
+<hr style="margin-bottom:50px;margin-top:20px;">
+
+</div>
+
+
+
+
+
+<div id = "ingressigiorno" class="col-lg-12 col-md-12  col-sm-12 col-xs-12"  style="background: rgba(255,255,255,1);margin-bottom: 25px;padding-top: 30px;padding-bottom: 30px;border-left: solid 5px green;min-height: 900px;">
+<div class="row" >
+
+
+
+<div  class="col-lg-3" style="background-color: green;min-height: 55px;padding-top:15px;margin-left:-20px;">
+<h4  class="text-center" style="font-family: 'Orbitron', sans-serif;">1 - TRAFFICO IN INGRESSO</h4>
+</div>
+
+<div class="col-lg-9">
+
+</div>
+</div>
+      <hr>
+
+      <div class="row" style="padding-right: 20px;">
+
+<div class="col-lg-11 col-lg-offset-1" style="margin-top: 40px;">
+ <ul class="list-group" style="margin: 0px;padding:0px;box-shadow:none;">
+  <li class="list-group-item" style="margin: 35px 0px 35px 0px;padding:0px;border:solid #fff 0px;">
+ 
+  <p class="text-justify">
+Il numero medio di ingressi giornalieri al <strong>{{ w.data_fine }}</strong> durante le fasce orarie <strong>07.30 - 19.30</strong> dei giorni con il provvedimento attivo risulta pari a <strong>{{(web_0Promise|orderBy:'-anno')[0].transiti_medi_730_1930_sottoperiodo| number: 0}}</strong>  ingressi/giorno, con una variazione di circa <strong>{{((web_0Promise|orderBy:'-anno')[0].transiti_medi_730_1930_sottoperiodo) - ((web_0Promise|orderBy:'-anno')[1].transiti_medi_730_1930_sottoperiodo)| number: 0}}</strong>ingressi <strong>{{(((web_0Promise|orderBy:'-anno')[0].transiti_medi_730_1930_sottoperiodo)/((web_0Promise|orderBy:'-anno')[1].transiti_medi_730_1930_sottoperiodo)-1)*100| number: 2}}%</strong> rispetto all'anno precedente. Mentre rispetto agli ingressi medi giornalieri registrati durante il 2011, con il provvedimento Ecopass in esercizio, il calo del traffico risulta pari al <strong>{{(((web_0Promise|orderBy:'-anno')[0].transiti_medi_730_1930_sottoperiodo)/(130000)-1)*100| number: 2}}%</strong> per una 
+riduzione media di circa <strong>{{((web_0Promise|orderBy:'-anno')[0].transiti_medi_730_1930_sottoperiodo) - (130000)| number: 0}}</strong> ingressi/giorno.
+  </p>
+
+ <p class="text-justify">
+ Considerando esclusivamente le fasce orarie del provvedimento attivo (fino alle 18.00 durante i giovedì feriali) la media degli ingressi scende a <strong>{{(web_0Promise|orderBy:'-anno')[0].transiti_medi_fasce_areac_sottoperiodo| number: 0}}</strong> per una variaizone di circa <strong>{{((web_0Promise|orderBy:'-anno')[0].transiti_medi_fasce_areac_sottoperiodo) - ((web_0Promise|orderBy:'-anno')[1].transiti_medi_fasce_areac_sottoperiodo)| number: 0}}</strong>
+ingressi al giorno rispetto all’anno precedente (<strong>{{(((web_0Promise|orderBy:'-anno')[0].transiti_medi_fasce_areac_sottoperiodo)/((web_0Promise|orderBy:'-anno')[1].transiti_medi_fasce_areac_sottoperiodo)-1)*100| number: 2}}%</strong>%).
+</p>
+
+  </li>
+</ul>
+
+</div>
+</div>
+
+<div class="row" style="padding-right: 20px;">
+  <div class="col-lg-12" style="margin-top: 70px;">
+    <nvd3 options="dataSetGraph_4.opzioni" data="dataSetGraph_4.dati"></nvd3>
+    <h5 class="text-center">Tab 0.3 - Andamento medio giornaliero per mense</h5> 
+  </div>
+  <div class="col-lg-12" style="margin-top: 70px;">
+    <nvd3 options="dataSetGraph_3.opzioni" data="dataSetGraph_3.dati"></nvd3>
+    <h5 class="text-center">Tab 0.4 - Andamento medio giornaliero per settimana</h5> 
+  </div>
+
+<div class="col-lg-11 col-lg-offset-1" style="margin-top: 40px;">
+-----------------------------
+LAvori in Corso
+---------------------------------
+
+
+
+3.  TRAFFICO IN INGRESSO AD AREA C
+
+COMMENTO SINTETICO
+
+• Mediamente il traffico in ingresso alla ZTL, durante le fasce orarie 07.30 – 19.30 di tutti i giorni feriali del 2015, risulta pari a circa 94.033 ingressi/giorno, con una crescita di circa 691 ingressi (+0,7%) rispetto all’anno precedete. Mentre rispetto agli ingressi medi giornalieri registrati durante il 2011, con il provvedimento Ecopass in esercizio, il calo del traffico risulta pari al 28.7% per una riduzione media di circa 37.865 ingressi/giorno
+
+• Considerando esclusivamente le fasce orarie del provvedimento attivo (fino alle 18.00 durante i giovedì feriali) la media degli ingressi scende a 91.248 con un incremento di circa 548 veicoli al giorno rispetto all’anno precedente (+0,6%).
+
+• La settimana dal 14 al 18 dicembre, precedente alle festività natalizie, risulta il periodo con il maggior numero di ingressi con una media di oltre 111.000 ingressi/giorno. 
+
+• La distribuzione delle variazioni di traffico in area C per mese, rispetto al 2014 mostra un decremento degli ingressi nel primo bimestre (-0,8% a gennaio e -2,9 a febbraio) seguito da un incremento abbastanza significativo nel trimestre successivo, con variazioni in aumento comprese fra il 3,4% a aprile e il massimo di 4,7% ad maggio. Mentre durante il mese di giugno gli ingressi registrati presentano nuovamente un lieve decremento di circa -0,6% rispetto al 2014. L’incremento medio di traffico in area C registrato fra marzo e aprile 2015, rispetto allo stesso periodo del 2014, può essere ricondotto a una serie di fattori, fra i quali il maggior successo della settimana del salone del mobile e la diversa e più sfavorevole distribuzione, nel 2015, delle vacanze di pasqua e del 25 aprile. L’incremento di traffico del 4,7% nel mese di maggio è invece probabilmente correlabile con l’avvio dell’Esposizione Universale “Milano Expo 2015” ospitata dal comune dal 1° Maggio al 31 Ottobre 2015. Tale incremento, con eccezione del mese di Giugno, si conferma fino ad ottobre 2015. Aanche se nel mese di agosto il calo è più probabilmente correlato al minor numero di giorni di sospensione che ne abbattono la media mensile. Mentre se a novembre si rileva una riduzione rispetto al 2014 nel mese di dicembre viene registrato un aumento che riporta gli ingressi ai livelli di dicembre 2012.  
+
+
+
+</div>
+</div>
+
+<hr style="margin-bottom:50px;margin-top:20px;">
+</div>
+
+
+<div id = "classi" class="col-lg-12 col-md-12  col-sm-12 col-xs-12"  style="background: rgba(255,255,255,1);margin-bottom: 25px;padding-top: 30px;padding-bottom: 30px;border-left: solid 5px yellow;min-height: 900px;">
+  <div class="row" >
+    <div  class="col-lg-3" style="background-color: yellow;min-height: 55px;padding-top:15px;margin-left:-20px;">
+    <h4  class="text-center" style="font-family: 'Orbitron', sans-serif;">2 - Ripartizione per classi </h4>
+    </div>
+
+    <div class="col-lg-9">
+    <ul class="list-group">
+      <li class="list-group-item">Andmaento degli ingressi. variaizone rispetto al 2011 Ecopass</li>
+      <li class="list-group-item">Variaizone rispetto alla media dell'anno precedente</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div id = "orario" class="col-lg-12 col-md-12  col-sm-12 col-xs-12"  style="background: rgba(255,255,255,1);margin-bottom: 25px;padding-top: 30px;padding-bottom: 30px;border-left: solid 5px blue;min-height: 900px;">
+  <div class="row" >
+    <div  class="col-lg-3" style="background-color: blue;min-height: 55px;padding-top:15px;margin-left:-20px;">
+    <h4  class="text-center" style="font-family: 'Orbitron', sans-serif;">3 - Andamento Orario</h4>
+    </div>
+
+    <div class="col-lg-9">
+    <ul class="list-group">
+      <li class="list-group-item">Andmaento degli ingressi. variaizone rispetto al 2011 Ecopass</li>
+      <li class="list-group-item">Variaizone rispetto alla media dell'anno precedente</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+
+<div id = "freq" class="col-lg-12 col-md-12  col-sm-12 col-xs-12"  style="background: rgba(255,255,255,1);margin-bottom: 25px;padding-top: 30px;padding-bottom: 30px;border-left: solid 5px orange;min-height: 900px;">
+  <div class="row" >
+    <div  class="col-lg-3" style="background-color: orange;min-height: 55px;padding-top:15px;margin-left:-20px;">
+    <h4  class="text-center" style="font-family: 'Orbitron', sans-serif;">4 - Frequenze di accesso</h4>
+    </div>
+
+    <div class="col-lg-9">
+    <ul class="list-group">
+      <li class="list-group-item">Andmaento degli ingressi. variaizone rispetto al 2011 Ecopass</li>
+      <li class="list-group-item">Variaizone rispetto alla media dell'anno precedente</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+
+</div>
