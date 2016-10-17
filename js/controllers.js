@@ -155,7 +155,37 @@ angular.module('app')
 
     $('html, body').animate({scrollTop : 0},800);
 
+//aggiungere il bottone non cliccabile se i due campi non sono compilati entrambi
+
+    $scope.buttonCheck = false;
     $scope.showSpinner = false;
+
+    $scope.loginData = { username : '',  
+                         password : ''}
+
+    $scope.$watch("loginData.password", function() {
+        //console.log('ciao',  $scope.buttonCheck);
+ 
+    if ( ($scope.loginData.username != '') 
+        &&  
+       (  ($scope.loginData.password != '') 
+        )
+       )
+        $scope.buttonCheck = true;
+    else {$scope.buttonCheck = false;}
+    });
+
+    $scope.$watch("loginData.username", function() {
+        //console.log('ciao',  $scope.buttonCheck);
+ 
+    if ( ($scope.loginData.username != '') 
+        &&  
+       (  ($scope.loginData.password != '') 
+        )
+       )
+        {$scope.buttonCheck = true;}
+    else {$scope.buttonCheck = false;}
+    });
 
     var auth = $firebaseAuth();
 
@@ -163,7 +193,12 @@ angular.module('app')
     $scope.doLogin = function() {
         $scope.showSpinner = true;
     //console.log('Doing login', $scope.loginData);
-
+    if ( ($scope.loginData.username != '') 
+        &&  
+       (  ($scope.loginData.password != '') 
+        )
+       )
+    {
   // login with Facebook
     auth.$signInWithEmailAndPassword($scope.loginData.username, $scope.loginData.password).then(function(firebaseUser) {
         //console.log("Signed in as:", firebaseUser.uid);
@@ -179,7 +214,12 @@ angular.module('app')
         $scope.showSpinner = false;
         console.log("Authentication failed:", error);
         });
+    }
+    else {
+        console.log('error')
+    }
     };
+
 
 
 })
@@ -236,6 +276,13 @@ angular.module('app')
     $scope.utilsServiceArr = utilsServiceArr
 
     $scope.itemTemp = {}
+
+    Date.prototype.ddmmyyyy = function() {
+      var mm = this.getMonth() + 1;
+      var dd = this.getDate();
+      var check = function(i){if (i< 10) { return '0'+i } return i }
+      return [check(dd), check(mm), this.getFullYear()].join('-'); // padding
+    };
 
     String.prototype.hashCode = function() {
       var hash = 0, i, chr, len;
@@ -417,6 +464,8 @@ angular.module('app')
         $scope.activeEditCampagna(item)
     }
 
+
+
     $scope.checkColor = function(item){
         var assegnaColore = function(lu){
             var l = new Date(lu)
@@ -582,8 +631,18 @@ angular.module('app')
         },
         legend: {
             position: 'bottomleft',
-            colors: [ '#679f22', '#37a8da', '#ff0000',  ],
-            labels: [ 'Last update < 1 anno', 'Last update >> 1 anno', 'Last update >> 2 anni' ]
+            colors: ['rgba(0,0,0,0)',  'rgba(0,0,0,0)','rgba(0,0,0,0)','rgba(0,0,0,0)','rgba(0,0,0,0)','rgba(0,0,0,0)', '#679f22', '#37a8da', '#ff0000'],
+            labels: [
+            '<span class="fa fa-road" aria-hidden="true" style="margin-left:-25px;margin-top:1px;margin-right:5px;"></span>'+' Analisi mista',
+            '<span class="fa fa-car" aria-hidden="true" style="margin-left:-25px;margin-top:10px;margin-right:5px;"></span>'+' Analisi autoveicoli',
+            '<span class="fa fa-bicycle" aria-hidden="true" style="margin-left:-25px;margin-right:5px;margin-top:10px;"></span>'+' Analisi biciclette',
+            '<span class="fa fa-motorcycle" aria-hidden="true" style="margin-right:5px;margin-left:-25px;margin-top:10px;"></span>'+' Analisi moto',
+            '<span class="fa fa-video-camera" aria-hidden="true" style="margin-left:-25px;margin-right:5px;margin-top:10px;"></span>'+ ' Solo video',
+            '<hr>',
+            'Aggiornamento >= '+ new Date((new Date()).getTime()-(1000*60*60*24*365)).ddmmyyyy(), 
+            ' >= '+ new Date((new Date()).getTime()-(1000*60*60*24*365*2)).ddmmyyyy() + ' e < '+ new Date((new Date()).getTime()-(1000*60*60*24*365)).ddmmyyyy(), 
+            ' < '+ new Date((new Date()).getTime()-(1000*60*60*24*365*2)).ddmmyyyy()
+            ]
         },
         tiles: {
                     url: "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",

@@ -41,7 +41,9 @@ height: 100%;
 </div>
     <br>
 
-          <button class="btn btn-block btn-primary btn-lg" type="submit" ng-click="doLogin()" >Log in</button>
+          <button class="btn btn-block btn-primary btn-lg" type="submit" ng-click="doLogin()" ng-class="{'disabled': !buttonCheck, '': buttonCheck} ">Log in</button>
+
+
 
 </div>
 
